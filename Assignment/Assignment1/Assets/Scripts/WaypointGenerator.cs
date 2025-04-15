@@ -43,7 +43,7 @@ public class WaypointGenerator : MonoBehaviour
         Vector3 origin = transform.position;
         Vector3 forward = transform.forward;
 
-        for (int i = 0; i < dense; i++)
+        for (int i = 1; i < dense; i++)
         {
             float t = (float)i / (dense - 1);
             Vector3 basePos = origin + forward * straightLength * t;
@@ -61,7 +61,7 @@ public class WaypointGenerator : MonoBehaviour
 
         Vector3 center = transform.position + sign * transform.right * radius;
 
-        for (int i = 0; i < dense; i++)
+        for (int i = 1; i < dense; i++)
         {
             float theta = stepAngle * i;
             float x = Mathf.Sin(theta) * radius;

@@ -9,7 +9,7 @@ public class CameraSwitcher : MonoBehaviour
     {
 
     }
-    void Update()
+    void LateUpdate()
     {
         if (Input.GetKeyDown(KeyCode.LeftShift) || Input.GetKeyDown(KeyCode.RightShift))
         {
